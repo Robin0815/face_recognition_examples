@@ -1,9 +1,9 @@
 import face_recognition
 from PIL import Image, ImageDraw
 
-image_of_balmer = face_recognition.load_image_file('/home/nutzer/Documents/TestData2/Steve_Ballmer_2014.jpeg')
+image_of_balmer = face_recognition.load_image_file('./img/Steve_Ballmer_2014.jpeg')
 balmer_face_encoding = face_recognition.face_encodings(image_of_balmer)[0]
-image_of_bill = face_recognition.load_image_file('./img/known/Bill Gates.jpg')
+image_of_bill = face_recognition.load_image_file('./img/Bill Gates.jpg')
 bill_face_encoding = face_recognition.face_encodings(image_of_bill)[0]
 
 
@@ -21,7 +21,7 @@ known_face_names = [
 ]
 
 # Load test image to find faces in
-test_image = face_recognition.load_image_file('/home/nutzer/Documents/TestData2/12650.jpeg')
+test_image = face_recognition.load_image_file('./img/NadellaGatesBalmer.jpeg')
 
 # Find faces in test image
 face_locations = face_recognition.face_locations(test_image)

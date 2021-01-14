@@ -9,11 +9,11 @@ def display(im):
     im.show()
 
 
-image_of_balmer = face_recognition.load_image_file('/home/nutzer/Documents/TestData2/Steve_Ballmer_2014.jpeg')
+image_of_balmer = face_recognition.load_image_file('./img/Steve_Ballmer_2014.jpeg')
 balmer_face_encoding = face_recognition.face_encodings(image_of_balmer)[0]
 
 unknown_image = face_recognition.load_image_file(
-    '/home/nutzer/Documents/TestData2/index.jpeg')
+    './img/UnknownBalmer.jpeg')
 unknown_face_encoding = face_recognition.face_encodings(unknown_image)[0]
 
 image_of_balmer = Image.fromarray(image_of_balmer)
@@ -37,6 +37,7 @@ unknown_image = unknown_image.resize((width, height))
 
 Image.fromarray(np.hstack((np.array(image_of_balmer), np.array(unknown_image)))).show()
 
+"""
+Change to add "Subject" to the picture metadata
 if results[0]:
-    a=0
-    stream = os.popen('exiftool -Subject=SteveBalmer /home/nutzer/Documents/TestData2/index.jpeg')
+    stream = os.popen('exiftool -Subject=SteveBalmer ./img/UnknownBalmer.jpeg')"""
