@@ -8,7 +8,7 @@ These code examples use the face-recognition python library
 
 for a more detailed description I highly recommend to use these ressources
 
-The original code this project is based:
+The code this project is based on:
 [https://github.com/bradtraversy/face_recognition_examples]
 
 ## Installing
