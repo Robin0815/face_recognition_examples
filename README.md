@@ -1,7 +1,7 @@
 # face_recognition_examples
 Examples for Python Face Recognition library
 
-##How to use
+## How to use
 These code examples use the face-recognition python library
 [https://pypi.org/project/face-recognition/]
 [https://github.com/ageitgey/face_recognition]
@@ -11,7 +11,7 @@ for a more detailed description I highly recommend to use these ressources
 The original code this project is based:
 [https://github.com/bradtraversy/face_recognition_examples]
 
-##Installing
+## Installing
 It is fairly easy to setup a development environment in Linux and I would recommend doing so, Mac and Windows should work but is not worth the hassle in my opinion.
 For Windows users it is easier to just setup a Virtual Machine with Linux, recommended Ubunu 20.04 LTS.
 In Ubuntu install your favorite Python Env, I used Anaconda 2020.11.
@@ -29,6 +29,6 @@ pip install face-recognition
 
 afterwards you should be able to use the library
 
-For a good understanding of fae recognition algorithms I recommend the OpenCV dcumentation:
+For a good understanding of face recognition algorithms I recommend the OpenCV dcumentation:
 Face detection [https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html]
 Face recognition [https://docs.opencv.org/3.4/da/d60/tutorial_face_main.html]
